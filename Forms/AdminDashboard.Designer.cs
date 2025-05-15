@@ -31,6 +31,7 @@
             DateTimePicker dateTimePickerReportFrom;
             tabControlAdmin = new TabControl();
             tabPageSuggestions = new TabPage();
+            buttonAddNewSuggestion = new Button();
             labelSuggestionsStatus = new Label();
             buttonUpdateStatus = new Button();
             comboBoxStatus = new ComboBox();
@@ -87,6 +88,7 @@
             // 
             // tabPageSuggestions
             // 
+            tabPageSuggestions.Controls.Add(buttonAddNewSuggestion);
             tabPageSuggestions.Controls.Add(labelSuggestionsStatus);
             tabPageSuggestions.Controls.Add(buttonUpdateStatus);
             tabPageSuggestions.Controls.Add(comboBoxStatus);
@@ -98,6 +100,16 @@
             tabPageSuggestions.TabIndex = 0;
             tabPageSuggestions.Text = "Suggestions";
             tabPageSuggestions.UseVisualStyleBackColor = true;
+            // 
+            // buttonAddNewSuggestion
+            // 
+            buttonAddNewSuggestion.Location = new Point(1163, 556);
+            buttonAddNewSuggestion.Name = "buttonAddNewSuggestion";
+            buttonAddNewSuggestion.Size = new Size(267, 29);
+            buttonAddNewSuggestion.TabIndex = 4;
+            buttonAddNewSuggestion.Text = "Add New Suggestion";
+            buttonAddNewSuggestion.UseVisualStyleBackColor = true;
+            buttonAddNewSuggestion.Click += buttonAddNewSuggestion_Click;
             // 
             // labelSuggestionsStatus
             // 
@@ -314,10 +326,9 @@
             // 
             // headerControlUC
             // 
-            headerControlUC.Dock = DockStyle.Top;
             headerControlUC.Location = new Point(0, 0);
             headerControlUC.Name = "headerControlUC";
-            headerControlUC.Size = new Size(1491, 55);
+            headerControlUC.Size = new Size(1491, 68);
             headerControlUC.TabIndex = 1;
             // 
             // AdminDashboard
@@ -371,5 +382,6 @@
         private Label labelSuggestionsStatus;
         private Button buttonApplyFilter;
         private Controls.HeaderControlUC headerControlUC;
+        private Button buttonAddNewSuggestion;
     }
 }

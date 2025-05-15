@@ -104,6 +104,18 @@ namespace ProductTrackerApp.Forms
 
             dataGridViewReport.DataSource = filteredSuggestions.ToList();
         }
+        private void buttonAddNewSuggestion_Click(object sender, EventArgs e)
+        {
+            var suggestionForm = Program.ServiceProvider.GetRequiredService<SuggestionForm>();
+            suggestionForm.ShowDialog();
+            RefreshSuggestions();
+        }
+
+        private void RefreshSuggestions()
+        {
+            dataGridViewSuggestions.DataSource = null;
+            dataGridViewSuggestions.DataSource = _suggestionService.GetAllSuggestions();
+        }
 
         private void HandleLogout(object sender, EventArgs e)
         {

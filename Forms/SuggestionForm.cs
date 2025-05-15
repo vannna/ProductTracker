@@ -25,6 +25,16 @@ namespace ProductTrackerApp.Forms
             // Populate products in ComboBox  
             comboBoxProduct.DataSource = DataStore.Products;
             comboBoxProduct.DisplayMember = "Name";
+
+            bool isAdmin = DataStore.CurrentUser?.Role == Role.Administrator;
+            comboBoxSuggestionStatus.Visible = isAdmin;
+            labelSuggestionStatus.Visible = isAdmin;
+
+            // Populate status combo for admins  
+            if (isAdmin)
+            {
+                comboBoxSuggestionStatus.DataSource = Enum.GetValues(typeof(Status));
+            }
         }
 
         // Save button logic  
@@ -43,7 +53,13 @@ namespace ProductTrackerApp.Forms
                 return;
             }
 
-            _suggestionService.AddSuggestion(selectedProduct, textBoxSuggestion.Text);
+            Status selectedStatus = Status.UNDER_REVIEW;
+            if (DataStore.CurrentUser?.Role == Role.Administrator)
+            {
+                selectedStatus = (Status)comboBoxSuggestionStatus.SelectedItem;
+            }
+
+            _suggestionService.AddSuggestion(selectedProduct, textBoxSuggestion.Text, selectedStatus);
             this.Close();
         }
     }

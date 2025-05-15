@@ -6,11 +6,6 @@ C:\Users\Vana\source\repos\VenioApp\bin\Debug\net8.0-windows\ProductTrackerApp.p
 C:\Users\Vana\source\repos\VenioApp\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\Vana\source\repos\VenioApp\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\Vana\source\repos\VenioApp\obj\Debug\net8.0-windows\ProductTrackerApp.csproj.AssemblyReference.cache
-C:\Users\Vana\source\repos\VenioApp\obj\Debug\net8.0-windows\VenioApp.Controls.HeaderControlUC.resources
-C:\Users\Vana\source\repos\VenioApp\obj\Debug\net8.0-windows\VenioApp.Forms.AdminDashboard.resources
-C:\Users\Vana\source\repos\VenioApp\obj\Debug\net8.0-windows\VenioApp.LoginForm.resources
-C:\Users\Vana\source\repos\VenioApp\obj\Debug\net8.0-windows\VenioApp.Forms.SuggestionForm.resources
-C:\Users\Vana\source\repos\VenioApp\obj\Debug\net8.0-windows\VenioApp.Forms.UserDashboard.resources
 C:\Users\Vana\source\repos\VenioApp\obj\Debug\net8.0-windows\ProductTrackerApp.csproj.GenerateResource.cache
 C:\Users\Vana\source\repos\VenioApp\obj\Debug\net8.0-windows\ProductTrackerApp.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Vana\source\repos\VenioApp\obj\Debug\net8.0-windows\ProductTrackerApp.AssemblyInfoInputs.cache
@@ -22,3 +17,9 @@ C:\Users\Vana\source\repos\VenioApp\obj\Debug\net8.0-windows\refint\ProductTrack
 C:\Users\Vana\source\repos\VenioApp\obj\Debug\net8.0-windows\ProductTrackerApp.pdb
 C:\Users\Vana\source\repos\VenioApp\obj\Debug\net8.0-windows\ProductTrackerApp.genruntimeconfig.cache
 C:\Users\Vana\source\repos\VenioApp\obj\Debug\net8.0-windows\ref\ProductTrackerApp.dll
+C:\Users\Vana\source\repos\VenioApp\obj\Debug\net8.0-windows\ProductTrackerApp.Controls.HeaderControlUC.resources
+C:\Users\Vana\source\repos\VenioApp\obj\Debug\net8.0-windows\ProductTrackerApp.Forms.AdminDashboard.resources
+C:\Users\Vana\source\repos\VenioApp\obj\Debug\net8.0-windows\ProductTrackerApp.LoginForm.resources
+C:\Users\Vana\source\repos\VenioApp\obj\Debug\net8.0-windows\ProductTrackerApp.Forms.SuggestionForm.resources
+C:\Users\Vana\source\repos\VenioApp\obj\Debug\net8.0-windows\ProductTrackerApp.Forms.UserDashboard.resources
+C:\Users\Vana\source\repos\VenioApp\obj\Debug\net8.0-windows\ProductTrackerApp.sourcelink.json

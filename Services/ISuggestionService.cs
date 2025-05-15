@@ -9,7 +9,7 @@ namespace ProductTrackerApp.Services
 {
     public interface ISuggestionService
     {
-        void AddSuggestion(Product product, string text);
+        void AddSuggestion(Product product, string text, Status status = Status.UNDER_REVIEW);
         void UpdateStatus(Suggestion suggestion, Status newStatus);
         List<Suggestion> GetSuggestionsByUser(User user);
         List<Suggestion> GetAllSuggestions();

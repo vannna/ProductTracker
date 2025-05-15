@@ -10,14 +10,14 @@ namespace ProductTrackerApp.Services
     public class SuggestionService: ISuggestionService
     {
         // Add a new suggestion  
-        public void AddSuggestion(Product product, string text)
+        public void AddSuggestion(Product product, string text, Status status = Status.UNDER_REVIEW)
         {
             Suggestion newSuggestion = new Suggestion
             {
                 Id = Guid.NewGuid().ToString(),
                 Product = product,
                 Text = text,
-                Status = Status.UNDER_REVIEW,
+                Status = status,
                 SubmittedBy = DataStore.CurrentUser,
                 SubmissionDate = DateTime.Now
             };

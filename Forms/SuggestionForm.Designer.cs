@@ -33,6 +33,8 @@
             comboBoxProduct = new ComboBox();
             textBoxSuggestion = new TextBox();
             buttonSave = new Button();
+            labelSuggestionStatus = new Label();
+            comboBoxSuggestionStatus = new ComboBox();
             SuspendLayout();
             // 
             // labelProduct
@@ -73,7 +75,7 @@
             // 
             // buttonSave
             // 
-            buttonSave.Location = new Point(283, 236);
+            buttonSave.Location = new Point(283, 301);
             buttonSave.Name = "buttonSave";
             buttonSave.Size = new Size(115, 29);
             buttonSave.TabIndex = 4;
@@ -81,11 +83,32 @@
             buttonSave.UseVisualStyleBackColor = true;
             buttonSave.Click += buttonSave_Click;
             // 
+            // labelSuggestionStatus
+            // 
+            labelSuggestionStatus.AutoSize = true;
+            labelSuggestionStatus.Location = new Point(14, 226);
+            labelSuggestionStatus.Name = "labelSuggestionStatus";
+            labelSuggestionStatus.Size = new Size(130, 20);
+            labelSuggestionStatus.TabIndex = 5;
+            labelSuggestionStatus.Text = "Suggestion Status:";
+            // 
+            // comboBoxSuggestionStatus
+            // 
+            comboBoxSuggestionStatus.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxSuggestionStatus.FlatStyle = FlatStyle.Flat;
+            comboBoxSuggestionStatus.FormattingEnabled = true;
+            comboBoxSuggestionStatus.Location = new Point(150, 226);
+            comboBoxSuggestionStatus.Name = "comboBoxSuggestionStatus";
+            comboBoxSuggestionStatus.Size = new Size(248, 28);
+            comboBoxSuggestionStatus.TabIndex = 6;
+            // 
             // SuggestionForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(427, 288);
+            ClientSize = new Size(459, 355);
+            Controls.Add(comboBoxSuggestionStatus);
+            Controls.Add(labelSuggestionStatus);
             Controls.Add(buttonSave);
             Controls.Add(textBoxSuggestion);
             Controls.Add(comboBoxProduct);
@@ -105,5 +128,7 @@
         private ComboBox comboBoxProduct;
         private TextBox textBoxSuggestion;
         private Button buttonSave;
+        private Label labelSuggestionStatus;
+        private ComboBox comboBoxSuggestionStatus;
     }
 }
